@@ -24,19 +24,33 @@ namespace GreenvilleRevenueGUI
         private void button1_Click(object sender, EventArgs e)
         {
             double lastYearContestants, thisYearContestants, expectedRevenue;
-            //string lastYearContestantsAsString, thisYearContestantsAsString;
-            bool moreThanLastYear;
+            
             
             lastYearContestants = Convert.ToDouble(lastYearTextBox.Text);
             thisYearContestants = Convert.ToDouble(thisYearTextBox.Text);
             expectedRevenue = thisYearContestants * 25; // entrence fee is $25
             expectedRevenueLabel.Text=("This year's projected income is "+ expectedRevenue.ToString("C"));
-            moreThanLastYear = thisYearContestants > lastYearContestants;
-            greaterLabel.Text="Are there more contestants at this year's event than last year: "+ moreThanLastYear;
-
+           
             expectedRevenueLabel.Visible = true;
             greaterLabel.Visible = true;
 
+            // check for twice as many contestants
+             if ((lastYearContestants * 2) + 1 <= thisYearContestants)
+            {
+                greaterLabel.Text = "The competition is more than twice as big this year!";
+            }
+             
+             // less than double
+            else  
+            {
+                greaterLabel.Text = "The competition is bigger than ever!";
+            }
+            // less than or equal to last year
+            if (lastYearContestants  >= thisYearContestants)
+            {
+                greaterLabel.Text = "A tighter race this year! Come out and cast your vote!";
+                
+            }
 
 
         }

@@ -94,7 +94,7 @@
             // greaterLabel
             // 
             this.greaterLabel.AutoSize = true;
-            this.greaterLabel.Location = new System.Drawing.Point(24, 160);
+            this.greaterLabel.Location = new System.Drawing.Point(16, 160);
             this.greaterLabel.Name = "greaterLabel";
             this.greaterLabel.Size = new System.Drawing.Size(35, 13);
             this.greaterLabel.TabIndex = 6;

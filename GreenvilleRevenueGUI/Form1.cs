@@ -1,6 +1,6 @@
 ﻿// Program written by: Erik Johnson, Jake Frasier
-//       Program date: 1/28/17
-//Program description:  Greenville Revenue Chapter 3, Case Problem 1
+//       Program date: 2/15/17
+//Program description:  Greenville Revenue Chapter 4, Case Problem 1
 // Encountered issues: 
 using System;
 using System.Collections.Generic;
